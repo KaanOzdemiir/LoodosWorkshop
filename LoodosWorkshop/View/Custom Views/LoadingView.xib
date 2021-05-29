@@ -30,7 +30,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="lb5-8e-3ob" firstAttribute="width" secondItem="Evd-ge-79f" secondAttribute="width" multiplier="0.5" id="22h-2p-076"/>
                         <constraint firstItem="lb5-8e-3ob" firstAttribute="centerX" secondItem="Evd-ge-79f" secondAttribute="centerX" id="9PL-iT-MjY"/>
@@ -39,7 +39,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Evd-ge-79f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ec7-4z-UGr"/>
                 <constraint firstAttribute="trailing" secondItem="Evd-ge-79f" secondAttribute="trailing" id="fZJ-sO-VbM"/>

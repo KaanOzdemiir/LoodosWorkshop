@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-bM-lmz">
-                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <rect key="frame" x="12" y="12" width="40" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61q-UZ-kco">
                                         <rect key="frame" x="8" y="8" width="11" height="24"/>
@@ -145,11 +145,11 @@
                             <constraint firstItem="5uF-z2-b0G" firstAttribute="top" secondItem="oRZ-xw-IEr" secondAttribute="top" constant="8" id="ZwI-zE-02o"/>
                             <constraint firstItem="s75-hr-PIa" firstAttribute="bottom" secondItem="5uF-z2-b0G" secondAttribute="bottom" constant="-8" id="baN-ro-Hzp"/>
                             <constraint firstItem="s75-hr-PIa" firstAttribute="trailing" secondItem="5uF-z2-b0G" secondAttribute="trailing" constant="-8" id="cIE-em-ZpV"/>
-                            <constraint firstItem="eyi-bM-lmz" firstAttribute="leading" secondItem="5uF-z2-b0G" secondAttribute="leading" constant="8" id="fpJ-9d-5Te"/>
+                            <constraint firstItem="eyi-bM-lmz" firstAttribute="leading" secondItem="5uF-z2-b0G" secondAttribute="leading" constant="4" id="fpJ-9d-5Te"/>
                             <constraint firstAttribute="bottom" secondItem="Unw-3D-AFb" secondAttribute="bottom" constant="8" id="nDt-Br-d9z"/>
                             <constraint firstAttribute="bottom" secondItem="5uF-z2-b0G" secondAttribute="bottom" constant="8" id="tac-oA-Wt4"/>
                             <constraint firstItem="Unw-3D-AFb" firstAttribute="leading" secondItem="5uF-z2-b0G" secondAttribute="trailing" constant="8" id="vMA-f0-efD"/>
-                            <constraint firstItem="eyi-bM-lmz" firstAttribute="top" secondItem="5uF-z2-b0G" secondAttribute="top" constant="8" id="vjP-zI-AjW"/>
+                            <constraint firstItem="eyi-bM-lmz" firstAttribute="top" secondItem="5uF-z2-b0G" secondAttribute="top" constant="4" id="vjP-zI-AjW"/>
                         </constraints>
                     </view>
                 </subviews>

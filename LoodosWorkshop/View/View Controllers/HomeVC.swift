@@ -73,6 +73,15 @@ extension HomeVC: UICollectionViewDataSource{
     }
 }
 
+// MARK: CollectionView Delegate
+extension HomeVC: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movie = viewModel.movies[indexPath.item]
+        self.pushMovieDetailVC(movie: movie)
+    }
+}
+
+// MARK: CollectionView Flow Layout Delegate
 extension HomeVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: collectionView.frame.width - 16, height: 280)

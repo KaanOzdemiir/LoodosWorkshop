@@ -11,7 +11,10 @@
 		F766172B2662CB95009DDBD2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766172A2662CB95009DDBD2 /* UIView+Extension.swift */; };
 		F766172E2662CEC1009DDBD2 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766172D2662CEC1009DDBD2 /* NotFoundView.swift */; };
 		F76617312662CEE8009DDBD2 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76617302662CEE8009DDBD2 /* NotFoundView.xib */; };
-		F76617382662D165009DDBD2 /* not_found.json in Resources */ = {isa = PBXBuildFile; fileRef = F76617372662D165009DDBD2 /* not_found.json */; };
+		F766173B2662D648009DDBD2 /* MovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766173A2662D648009DDBD2 /* MovieDetailVC.swift */; };
+		F766173E2662D794009DDBD2 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766173D2662D794009DDBD2 /* MovieDetailViewModel.swift */; };
+		F76617432662DAC8009DDBD2 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F76617412662DAC7009DDBD2 /* loading.json */; };
+		F76617442662DAC8009DDBD2 /* not_found.json in Resources */ = {isa = PBXBuildFile; fileRef = F76617422662DAC8009DDBD2 /* not_found.json */; };
 		F7A42D4A26629CED00536AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42D4926629CED00536AB8 /* AppDelegate.swift */; };
 		F7A42D4E26629CED00536AB8 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42D4D26629CED00536AB8 /* SplashVC.swift */; };
 		F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A42D4F26629CED00536AB8 /* Main.storyboard */; };
@@ -21,7 +24,6 @@
 		F7A42E622662A6B500536AB8 /* RxEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42E612662A6B500536AB8 /* RxEvent.swift */; };
 		F7A42EED2662AC7400536AB8 /* VC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42EEC2662AC7400536AB8 /* VC+Extension.swift */; };
 		F7A42EF92662AD1F00536AB8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42EF82662AD1F00536AB8 /* HomeVC.swift */; };
-		F7A42F222662AE8F00536AB8 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F7A42F212662AE8F00536AB8 /* loading.json */; };
 		F7A42F262662AF1A00536AB8 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A42F252662AF1A00536AB8 /* LoadingView.xib */; };
 		F7A42F292662AF5200536AB8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42F282662AF5200536AB8 /* LoadingView.swift */; };
 		F7A42F2D2662B47D00536AB8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42F2C2662B47D00536AB8 /* APIService.swift */; };
@@ -41,7 +43,10 @@
 		F766172A2662CB95009DDBD2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F766172D2662CEC1009DDBD2 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
 		F76617302662CEE8009DDBD2 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
-		F76617372662D165009DDBD2 /* not_found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = not_found.json; sourceTree = "<group>"; };
+		F766173A2662D648009DDBD2 /* MovieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailVC.swift; sourceTree = "<group>"; };
+		F766173D2662D794009DDBD2 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		F76617412662DAC7009DDBD2 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		F76617422662DAC8009DDBD2 /* not_found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = not_found.json; sourceTree = "<group>"; };
 		F7A42D4626629CED00536AB8 /* LoodosWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A42D4926629CED00536AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7A42D4D26629CED00536AB8 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
@@ -53,7 +58,6 @@
 		F7A42E612662A6B500536AB8 /* RxEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxEvent.swift; sourceTree = "<group>"; };
 		F7A42EEC2662AC7400536AB8 /* VC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Extension.swift"; sourceTree = "<group>"; };
 		F7A42EF82662AD1F00536AB8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		F7A42F212662AE8F00536AB8 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		F7A42F252662AF1A00536AB8 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		F7A42F282662AF5200536AB8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F7A42F2C2662B47D00536AB8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -95,6 +99,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F76617472662DB95009DDBD2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42D4D26629CED00536AB8 /* SplashVC.swift */,
+				F7A42EF82662AD1F00536AB8 /* HomeVC.swift */,
+				F766173A2662D648009DDBD2 /* MovieDetailVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F766174A2662DBBF009DDBD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42D4926629CED00536AB8 /* AppDelegate.swift */,
+				F7A42D5226629CED00536AB8 /* Assets.xcassets */,
+				F7A42D5426629CED00536AB8 /* LaunchScreen.storyboard */,
+				F7A42D5726629CED00536AB8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F7A42D3D26629CED00536AB8 = {
 			isa = PBXGroup;
 			children = (
@@ -124,11 +149,8 @@
 				F7A42FA42662BA8E00536AB8 /* ViewModel */,
 				F7A42EEB2662AC6700536AB8 /* Helpers */,
 				F7A42F1E2662AE7300536AB8 /* Util */,
-				F7A42E5F2662A6A500536AB8 /* rx */,
-				F7A42D4926629CED00536AB8 /* AppDelegate.swift */,
-				F7A42D5226629CED00536AB8 /* Assets.xcassets */,
-				F7A42D5426629CED00536AB8 /* LaunchScreen.storyboard */,
-				F7A42D5726629CED00536AB8 /* Info.plist */,
+				F7A42E5F2662A6A500536AB8 /* RX */,
+				F766174A2662DBBF009DDBD2 /* Supporting Files */,
 				F7A42DD82662A3F900536AB8 /* Google-Info */,
 			);
 			path = LoodosWorkshop;
@@ -142,12 +164,12 @@
 			path = "Google-Info";
 			sourceTree = "<group>";
 		};
-		F7A42E5F2662A6A500536AB8 /* rx */ = {
+		F7A42E5F2662A6A500536AB8 /* RX */ = {
 			isa = PBXGroup;
 			children = (
 				F7A42E612662A6B500536AB8 /* RxEvent.swift */,
 			);
-			path = rx;
+			path = RX;
 			sourceTree = "<group>";
 		};
 		F7A42EEB2662AC6700536AB8 /* Helpers */ = {
@@ -163,10 +185,9 @@
 		F7A42EF22662ACEB00536AB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F76617472662DB95009DDBD2 /* View Controllers */,
 				F7A42FB72662C42500536AB8 /* CollectionViewCells */,
 				F7A42F242662AF0A00536AB8 /* Custom Views */,
-				F7A42D4D26629CED00536AB8 /* SplashVC.swift */,
-				F7A42EF82662AD1F00536AB8 /* HomeVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,8 +203,8 @@
 		F7A42F1F2662AE8100536AB8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				F7A42F212662AE8F00536AB8 /* loading.json */,
-				F76617372662D165009DDBD2 /* not_found.json */,
+				F76617412662DAC7009DDBD2 /* loading.json */,
+				F76617422662DAC8009DDBD2 /* not_found.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -220,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				F7A42FA52662BA9900536AB8 /* HomeViewModel.swift */,
+				F766173D2662D794009DDBD2 /* MovieDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -303,12 +325,12 @@
 			files = (
 				F7A42D5626629CED00536AB8 /* LaunchScreen.storyboard in Resources */,
 				F76617312662CEE8009DDBD2 /* NotFoundView.xib in Resources */,
+				F76617432662DAC8009DDBD2 /* loading.json in Resources */,
 				F7A42DDA2662A3F900536AB8 /* GoogleService-Info.plist in Resources */,
 				F7A42D5326629CED00536AB8 /* Assets.xcassets in Resources */,
 				F7A42F262662AF1A00536AB8 /* LoadingView.xib in Resources */,
+				F76617442662DAC8009DDBD2 /* not_found.json in Resources */,
 				F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */,
-				F76617382662D165009DDBD2 /* not_found.json in Resources */,
-				F7A42F222662AE8F00536AB8 /* loading.json in Resources */,
 				F7A42FBB2662C43A00536AB8 /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,9 +394,11 @@
 				F7A42F2D2662B47D00536AB8 /* APIService.swift in Sources */,
 				F766172E2662CEC1009DDBD2 /* NotFoundView.swift in Sources */,
 				F766172B2662CB95009DDBD2 /* UIView+Extension.swift in Sources */,
+				F766173B2662D648009DDBD2 /* MovieDetailVC.swift in Sources */,
 				F7A42EF92662AD1F00536AB8 /* HomeVC.swift in Sources */,
 				F7A42D4E26629CED00536AB8 /* SplashVC.swift in Sources */,
 				F7A42EED2662AC7400536AB8 /* VC+Extension.swift in Sources */,
+				F766173E2662D794009DDBD2 /* MovieDetailViewModel.swift in Sources */,
 				F7A42D4A26629CED00536AB8 /* AppDelegate.swift in Sources */,
 				F7A42F292662AF5200536AB8 /* LoadingView.swift in Sources */,
 			);
@@ -526,7 +550,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
-				INFOPLIST_FILE = LoodosWorkshop/Info.plist;
+				INFOPLIST_FILE = "LoodosWorkshop/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,7 +571,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
-				INFOPLIST_FILE = LoodosWorkshop/Info.plist;
+				INFOPLIST_FILE = "LoodosWorkshop/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

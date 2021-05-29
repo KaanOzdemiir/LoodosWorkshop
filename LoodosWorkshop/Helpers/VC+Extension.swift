@@ -16,6 +16,14 @@ extension UIViewController{
         navigationController?.pushViewController(homeVC, animated: true)
     }
     
+    func pushMovieDetailVC(movie: MovieResponse) {
+        guard let movieDetailVC = storyboard?.instantiateViewController(withIdentifier: "MovieDetailVC") as? MovieDetailVC else {
+            return
+        }
+        movieDetailVC.viewModel.movie = movie
+        navigationController?.pushViewController(movieDetailVC, animated: true)
+    }
+    
     func presentLoadingView() {
         var loadingView: LoadingView!
         
