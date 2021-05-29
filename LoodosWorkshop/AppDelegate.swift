@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseRemoteConfig
+import RxBus
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -58,5 +59,7 @@ extension AppDelegate {
         let loodosText = config.configValue(forKey: "LoodosText").stringValue ?? ""
         
         print("Loodos Text: \(loodosText)")
+        
+        RxBus.shared.post(event: RxEvent.loodosTextFeched(text: loodosText), sticky: true)
     }
 }

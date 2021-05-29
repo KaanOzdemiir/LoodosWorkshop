@@ -32,6 +32,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="C6M-7R-6eo"/>
+                    <connections>
+                        <outlet property="loodosLabel" destination="zXc-xw-ooS" id="bXi-6H-OSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
