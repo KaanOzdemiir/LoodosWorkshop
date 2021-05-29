@@ -8,15 +8,24 @@
 import UIKit
 import RxBus
 import RxSwift
+import Shimmer
 
 class SplashVC: UIViewController {
 
     @IBOutlet weak var loodosLabel: UILabel!
+    
+    var shimmer: FBShimmeringView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initViews()
         subscribeLoodosTextEvent()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        hideNavigationBar()
     }
 
     func initViews() {
@@ -33,6 +42,19 @@ extension SplashVC{
             guard let self = self else { return }
             self.loodosLabel.text = event.text
             rxLoodosTextDisposable?.dispose()
+            self.applyShimmer()
         })
+    }
+    
+    func applyShimmer() {
+        shimmer = FBShimmeringView(frame: self.view.frame)
+        self.view.addSubview(shimmer)
+        shimmer.contentView = loodosLabel
+        shimmer.shimmeringSpeed = 300
+        shimmer.isShimmering = true
+    }
+    
+    func hideNavigationBar() {
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
