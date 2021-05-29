@@ -13,6 +13,7 @@
 		F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A42D4F26629CED00536AB8 /* Main.storyboard */; };
 		F7A42D5326629CED00536AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A42D5226629CED00536AB8 /* Assets.xcassets */; };
 		F7A42D5626629CED00536AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A42D5426629CED00536AB8 /* LaunchScreen.storyboard */; };
+		F7A42DDA2662A3F900536AB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7A42DD92662A3F900536AB8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F7A42D5226629CED00536AB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7A42D5526629CED00536AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7A42D5726629CED00536AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A42DD92662A3F900536AB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +86,17 @@
 				F7A42D5226629CED00536AB8 /* Assets.xcassets */,
 				F7A42D5426629CED00536AB8 /* LaunchScreen.storyboard */,
 				F7A42D5726629CED00536AB8 /* Info.plist */,
+				F7A42DD82662A3F900536AB8 /* Google-Info */,
 			);
 			path = LoodosWorkshop;
+			sourceTree = "<group>";
+		};
+		F7A42DD82662A3F900536AB8 /* Google-Info */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42DD92662A3F900536AB8 /* GoogleService-Info.plist */,
+			);
+			path = "Google-Info";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A42D5626629CED00536AB8 /* LaunchScreen.storyboard in Resources */,
+				F7A42DDA2662A3F900536AB8 /* GoogleService-Info.plist in Resources */,
 				F7A42D5326629CED00536AB8 /* Assets.xcassets in Resources */,
 				F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */,
 			);

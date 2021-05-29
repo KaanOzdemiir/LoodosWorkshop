@@ -17,5 +17,6 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Hero'
 pod 'Shimmer'
+pod 'Firebase/RemoteConfig'
 
 end
