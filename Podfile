@@ -6,9 +6,8 @@ target 'LoodosWorkshop' do
   use_frameworks!
 
   # Pods for LoodosWorkshop
-pod 'Alamofire', '~> 5.0.0-rc.2'
-pod 'AlamofireObjectMapper'
-pod 'AlamofireNetworkActivityLogger'
+pod 'AlamofireObjectMapper', '~> 5.2'
+pod 'AlamofireNetworkActivityLogger', '~> 2.0'
 pod 'RxBus'
 pod 'RxSwift'
 pod 'RxCocoa'

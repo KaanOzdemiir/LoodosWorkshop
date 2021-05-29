@@ -27,6 +27,7 @@ class LoadingView: UIView {
     }
     
     func initSubviews() {
+        self.tag = 999
         let nib = UINib(nibName: "LoadingView", bundle: nil)
         nib.instantiate(withOwner: self, options: nil)
         contentView.frame = bounds

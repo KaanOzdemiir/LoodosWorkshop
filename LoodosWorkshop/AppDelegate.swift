@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FirebaseRemoteConfig
 import RxBus
+import AlamofireNetworkActivityLogger
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         fetchRemoteConfig()
+        
+        
+        #if DEBUG
+        NetworkActivityLogger.shared.level = .debug
+        NetworkActivityLogger.shared.startLogging()
+        #endif
 
         return true
     }

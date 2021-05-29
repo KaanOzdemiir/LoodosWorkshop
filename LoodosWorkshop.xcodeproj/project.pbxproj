@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		67962E1BEC48DA21BCC2E0E5 /* Pods_LoodosWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137F611641067A9345608677 /* Pods_LoodosWorkshop.framework */; };
+		F766172B2662CB95009DDBD2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766172A2662CB95009DDBD2 /* UIView+Extension.swift */; };
 		F7A42D4A26629CED00536AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42D4926629CED00536AB8 /* AppDelegate.swift */; };
 		F7A42D4E26629CED00536AB8 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42D4D26629CED00536AB8 /* SplashVC.swift */; };
 		F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A42D4F26629CED00536AB8 /* Main.storyboard */; };
@@ -20,12 +21,21 @@
 		F7A42F222662AE8F00536AB8 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F7A42F212662AE8F00536AB8 /* loading.json */; };
 		F7A42F262662AF1A00536AB8 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A42F252662AF1A00536AB8 /* LoadingView.xib */; };
 		F7A42F292662AF5200536AB8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42F282662AF5200536AB8 /* LoadingView.swift */; };
+		F7A42F2D2662B47D00536AB8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42F2C2662B47D00536AB8 /* APIService.swift */; };
+		F7A42F302662B4A600536AB8 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42F2F2662B4A600536AB8 /* AppConfig.swift */; };
+		F7A42F372662B76E00536AB8 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42F362662B76E00536AB8 /* MovieResponse.swift */; };
+		F7A42FA62662BA9900536AB8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42FA52662BA9900536AB8 /* HomeViewModel.swift */; };
+		F7A42FAB2662BAD700536AB8 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42FAA2662BAD700536AB8 /* MovieRepository.swift */; };
+		F7A42FAF2662BE5700536AB8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42FAE2662BE5700536AB8 /* String+Extension.swift */; };
+		F7A42FBA2662C43A00536AB8 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42FB82662C43A00536AB8 /* MovieCollectionViewCell.swift */; };
+		F7A42FBB2662C43A00536AB8 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A42FB92662C43A00536AB8 /* MovieCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		137F611641067A9345608677 /* Pods_LoodosWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		230F4D35EDB62CF73A036BDB /* Pods-LoodosWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosWorkshop.release.xcconfig"; path = "Target Support Files/Pods-LoodosWorkshop/Pods-LoodosWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		924AA61824A4A677825204CA /* Pods-LoodosWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosWorkshop.debug.xcconfig"; path = "Target Support Files/Pods-LoodosWorkshop/Pods-LoodosWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
+		F766172A2662CB95009DDBD2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F7A42D4626629CED00536AB8 /* LoodosWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A42D4926629CED00536AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7A42D4D26629CED00536AB8 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
@@ -40,6 +50,14 @@
 		F7A42F212662AE8F00536AB8 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		F7A42F252662AF1A00536AB8 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		F7A42F282662AF5200536AB8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F7A42F2C2662B47D00536AB8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F7A42F2F2662B4A600536AB8 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		F7A42F362662B76E00536AB8 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		F7A42FA52662BA9900536AB8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F7A42FAA2662BAD700536AB8 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		F7A42FAE2662BE5700536AB8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F7A42FB82662C43A00536AB8 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7A42FB92662C43A00536AB8 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +110,15 @@
 		F7A42D4826629CED00536AB8 /* LoodosWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				F7A42F1E2662AE7300536AB8 /* Util */,
-				F7A42EF22662ACEB00536AB8 /* View */,
-				F7A42EEB2662AC6700536AB8 /* Helpers */,
-				F7A42E5F2662A6A500536AB8 /* rx */,
 				F7A42D4F26629CED00536AB8 /* Main.storyboard */,
+				F7A42F2B2662B46E00536AB8 /* API */,
+				F7A42FA92662BACA00536AB8 /* Repository */,
+				F7A42F352662B76100536AB8 /* Model */,
+				F7A42EF22662ACEB00536AB8 /* View */,
+				F7A42FA42662BA8E00536AB8 /* ViewModel */,
+				F7A42EEB2662AC6700536AB8 /* Helpers */,
+				F7A42F1E2662AE7300536AB8 /* Util */,
+				F7A42E5F2662A6A500536AB8 /* rx */,
 				F7A42D4926629CED00536AB8 /* AppDelegate.swift */,
 				F7A42D5226629CED00536AB8 /* Assets.xcassets */,
 				F7A42D5426629CED00536AB8 /* LaunchScreen.storyboard */,
@@ -126,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				F7A42EEC2662AC7400536AB8 /* VC+Extension.swift */,
+				F7A42FAE2662BE5700536AB8 /* String+Extension.swift */,
+				F766172A2662CB95009DDBD2 /* UIView+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -133,6 +157,7 @@
 		F7A42EF22662ACEB00536AB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F7A42FB72662C42500536AB8 /* CollectionViewCells */,
 				F7A42F242662AF0A00536AB8 /* Custom Views */,
 				F7A42D4D26629CED00536AB8 /* SplashVC.swift */,
 				F7A42EF82662AD1F00536AB8 /* HomeVC.swift */,
@@ -163,6 +188,48 @@
 				F7A42F282662AF5200536AB8 /* LoadingView.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		F7A42F2B2662B46E00536AB8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42F2C2662B47D00536AB8 /* APIService.swift */,
+				F7A42F2F2662B4A600536AB8 /* AppConfig.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F7A42F352662B76100536AB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42F362662B76E00536AB8 /* MovieResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7A42FA42662BA8E00536AB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42FA52662BA9900536AB8 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7A42FA92662BACA00536AB8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42FAA2662BAD700536AB8 /* MovieRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F7A42FB72662C42500536AB8 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42FB82662C43A00536AB8 /* MovieCollectionViewCell.swift */,
+				F7A42FB92662C43A00536AB8 /* MovieCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +298,7 @@
 				F7A42F262662AF1A00536AB8 /* LoadingView.xib in Resources */,
 				F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */,
 				F7A42F222662AE8F00536AB8 /* loading.json in Resources */,
+				F7A42FBB2662C43A00536AB8 /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +352,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A42E622662A6B500536AB8 /* RxEvent.swift in Sources */,
+				F7A42FBA2662C43A00536AB8 /* MovieCollectionViewCell.swift in Sources */,
+				F7A42F372662B76E00536AB8 /* MovieResponse.swift in Sources */,
+				F7A42F302662B4A600536AB8 /* AppConfig.swift in Sources */,
+				F7A42FAB2662BAD700536AB8 /* MovieRepository.swift in Sources */,
+				F7A42FAF2662BE5700536AB8 /* String+Extension.swift in Sources */,
+				F7A42FA62662BA9900536AB8 /* HomeViewModel.swift in Sources */,
+				F7A42F2D2662B47D00536AB8 /* APIService.swift in Sources */,
+				F766172B2662CB95009DDBD2 /* UIView+Extension.swift in Sources */,
 				F7A42EF92662AD1F00536AB8 /* HomeVC.swift in Sources */,
 				F7A42D4E26629CED00536AB8 /* SplashVC.swift in Sources */,
 				F7A42EED2662AC7400536AB8 /* VC+Extension.swift in Sources */,
