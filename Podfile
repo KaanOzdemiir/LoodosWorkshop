@@ -19,7 +19,7 @@ pod 'Firebase/Firestore'
 pod 'Hero'
 pod 'Shimmer'
 pod 'Firebase/RemoteConfig'
-
+pod 'lottie-ios'
 end
 
 deployment_target = '11.0'

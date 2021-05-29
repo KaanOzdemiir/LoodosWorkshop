@@ -16,6 +16,10 @@
 		F7A42DDA2662A3F900536AB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7A42DD92662A3F900536AB8 /* GoogleService-Info.plist */; };
 		F7A42E622662A6B500536AB8 /* RxEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42E612662A6B500536AB8 /* RxEvent.swift */; };
 		F7A42EED2662AC7400536AB8 /* VC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42EEC2662AC7400536AB8 /* VC+Extension.swift */; };
+		F7A42EF92662AD1F00536AB8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42EF82662AD1F00536AB8 /* HomeVC.swift */; };
+		F7A42F222662AE8F00536AB8 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F7A42F212662AE8F00536AB8 /* loading.json */; };
+		F7A42F262662AF1A00536AB8 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A42F252662AF1A00536AB8 /* LoadingView.xib */; };
+		F7A42F292662AF5200536AB8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42F282662AF5200536AB8 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		F7A42DD92662A3F900536AB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7A42E612662A6B500536AB8 /* RxEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxEvent.swift; sourceTree = "<group>"; };
 		F7A42EEC2662AC7400536AB8 /* VC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Extension.swift"; sourceTree = "<group>"; };
+		F7A42EF82662AD1F00536AB8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F7A42F212662AE8F00536AB8 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		F7A42F252662AF1A00536AB8 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F7A42F282662AF5200536AB8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +92,12 @@
 		F7A42D4826629CED00536AB8 /* LoodosWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				F7A42F1E2662AE7300536AB8 /* Util */,
+				F7A42EF22662ACEB00536AB8 /* View */,
 				F7A42EEB2662AC6700536AB8 /* Helpers */,
 				F7A42E5F2662A6A500536AB8 /* rx */,
 				F7A42D4F26629CED00536AB8 /* Main.storyboard */,
 				F7A42D4926629CED00536AB8 /* AppDelegate.swift */,
-				F7A42D4D26629CED00536AB8 /* SplashVC.swift */,
 				F7A42D5226629CED00536AB8 /* Assets.xcassets */,
 				F7A42D5426629CED00536AB8 /* LaunchScreen.storyboard */,
 				F7A42D5726629CED00536AB8 /* Info.plist */,
@@ -121,6 +130,41 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		F7A42EF22662ACEB00536AB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42F242662AF0A00536AB8 /* Custom Views */,
+				F7A42D4D26629CED00536AB8 /* SplashVC.swift */,
+				F7A42EF82662AD1F00536AB8 /* HomeVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A42F1E2662AE7300536AB8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42F1F2662AE8100536AB8 /* Animations */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F7A42F1F2662AE8100536AB8 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42F212662AE8F00536AB8 /* loading.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		F7A42F242662AF0A00536AB8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7A42F252662AF1A00536AB8 /* LoadingView.xib */,
+				F7A42F282662AF5200536AB8 /* LoadingView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +195,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Kaan Ozdemir";
 				TargetAttributes = {
 					F7A42D4526629CED00536AB8 = {
 						CreatedOnToolsVersion = 12.4;
@@ -183,7 +228,9 @@
 				F7A42D5626629CED00536AB8 /* LaunchScreen.storyboard in Resources */,
 				F7A42DDA2662A3F900536AB8 /* GoogleService-Info.plist in Resources */,
 				F7A42D5326629CED00536AB8 /* Assets.xcassets in Resources */,
+				F7A42F262662AF1A00536AB8 /* LoadingView.xib in Resources */,
 				F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */,
+				F7A42F222662AE8F00536AB8 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A42E622662A6B500536AB8 /* RxEvent.swift in Sources */,
+				F7A42EF92662AD1F00536AB8 /* HomeVC.swift in Sources */,
 				F7A42D4E26629CED00536AB8 /* SplashVC.swift in Sources */,
 				F7A42EED2662AC7400536AB8 /* VC+Extension.swift in Sources */,
 				F7A42D4A26629CED00536AB8 /* AppDelegate.swift in Sources */,
+				F7A42F292662AF5200536AB8 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

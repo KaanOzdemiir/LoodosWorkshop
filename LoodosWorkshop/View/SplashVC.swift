@@ -52,6 +52,10 @@ extension SplashVC{
         shimmer.contentView = loodosLabel
         shimmer.shimmeringSpeed = 300
         shimmer.isShimmering = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.pushHomeVC()
+        }
     }
     
     func hideNavigationBar() {
