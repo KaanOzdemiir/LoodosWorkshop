@@ -29,17 +29,14 @@ class MovieCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        initViews()
-    }
-    
-    func initViews() {
-        rateContainerView.applyGradient(startColor: gradientStartColor, endColor: gradientEndColor)
     }
 
     func setWith(_ movie: MovieResponse) {
         
         if let imageURL = URL(string: movie.poster ?? ""){
             posterImageView.kf.setImage(with: ImageResource(downloadURL: imageURL))
+        }else{
+            posterImageView.image = nil
         }
         
         titleLabel.text = movie.title
@@ -49,6 +46,10 @@ class MovieCollectionViewCell: UICollectionViewCell {
             let ratings = splitedRating[0].split(separator: ".")
             rateIntlabel.text = "\(ratings[0])"
             rateDecimalLabel.text = ".\(ratings[1])"
+            rateContainerView.applyGradient(startColor: gradientStartColor, endColor: gradientEndColor)
+            rateContainerView.isHidden = false
+        }else{
+            rateContainerView.isHidden = true
         }
         
         runtimeLabel.text = movie.runtime

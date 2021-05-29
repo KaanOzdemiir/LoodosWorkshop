@@ -27,7 +27,6 @@ class HomeVC: UIViewController {
         configureSearchBar()
         subscribeMovieResponse()
         presentLoadingView()
-        viewModel.fetchMovies()
     }
     
     func configureCollectionView() {
@@ -35,14 +34,20 @@ class HomeVC: UIViewController {
     }
     
     func subscribeMovieResponse() {
-        viewModel.rxMovieResponse.subscribe(onNext: { [weak self] (response) in
+        viewModel.rxMovieResponse.subscribe(onNext: { [weak self] (result) in
             guard let self = self else { return }
             
             self.hideLoadingView()
-            if response.response.boolValue{
-                
+            if result.response.boolValue{
+                self.collectionView.backgroundView = nil
             }else{
-                
+                if self.viewModel.isSeaching{
+                    self.collectionView.backgroundView = self.getNotFoundView()
+                }else{
+                    let alert = UIAlertController(title: "Error!", message: "Something went wrong. Please check your entry.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default))
+                    self.present(alert, animated: true)
+                }
             }
             
             self.collectionView.reloadData()
@@ -83,7 +88,7 @@ extension HomeVC{
             .rx.text
             .orEmpty
             .debounce(.milliseconds(500), scheduler: MainScheduler.instance)
-            .distinctUntilChanged() // If previous text changes
+            .distinctUntilChanged()
             .filter { !$0.isEmpty }
             .subscribe(onNext: { [weak self] text in
                 print("Search Bar Text --> ", text)
@@ -101,7 +106,7 @@ extension HomeVC{
             .filter { $0.isEmpty }
             .subscribe(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                
+                self.viewModel.searchText = ""
             })
             .disposed(by: viewModel.disposeBag)
     }

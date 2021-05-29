@@ -10,6 +10,6 @@ import Foundation
 
 extension String{
     var boolValue: Bool{
-        return self == "1" || self == "true"
+        return self == "1" || self == "true" || self == "True" || self == "TRUE"
     }
 }

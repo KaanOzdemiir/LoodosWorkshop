@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		67962E1BEC48DA21BCC2E0E5 /* Pods_LoodosWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137F611641067A9345608677 /* Pods_LoodosWorkshop.framework */; };
 		F766172B2662CB95009DDBD2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766172A2662CB95009DDBD2 /* UIView+Extension.swift */; };
+		F766172E2662CEC1009DDBD2 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766172D2662CEC1009DDBD2 /* NotFoundView.swift */; };
+		F76617312662CEE8009DDBD2 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76617302662CEE8009DDBD2 /* NotFoundView.xib */; };
+		F76617382662D165009DDBD2 /* not_found.json in Resources */ = {isa = PBXBuildFile; fileRef = F76617372662D165009DDBD2 /* not_found.json */; };
 		F7A42D4A26629CED00536AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42D4926629CED00536AB8 /* AppDelegate.swift */; };
 		F7A42D4E26629CED00536AB8 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A42D4D26629CED00536AB8 /* SplashVC.swift */; };
 		F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A42D4F26629CED00536AB8 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 		230F4D35EDB62CF73A036BDB /* Pods-LoodosWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosWorkshop.release.xcconfig"; path = "Target Support Files/Pods-LoodosWorkshop/Pods-LoodosWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		924AA61824A4A677825204CA /* Pods-LoodosWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosWorkshop.debug.xcconfig"; path = "Target Support Files/Pods-LoodosWorkshop/Pods-LoodosWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 		F766172A2662CB95009DDBD2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F766172D2662CEC1009DDBD2 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
+		F76617302662CEE8009DDBD2 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
+		F76617372662D165009DDBD2 /* not_found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = not_found.json; sourceTree = "<group>"; };
 		F7A42D4626629CED00536AB8 /* LoodosWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A42D4926629CED00536AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7A42D4D26629CED00536AB8 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				F7A42F212662AE8F00536AB8 /* loading.json */,
+				F76617372662D165009DDBD2 /* not_found.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -186,6 +193,8 @@
 			children = (
 				F7A42F252662AF1A00536AB8 /* LoadingView.xib */,
 				F7A42F282662AF5200536AB8 /* LoadingView.swift */,
+				F766172D2662CEC1009DDBD2 /* NotFoundView.swift */,
+				F76617302662CEE8009DDBD2 /* NotFoundView.xib */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -293,10 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A42D5626629CED00536AB8 /* LaunchScreen.storyboard in Resources */,
+				F76617312662CEE8009DDBD2 /* NotFoundView.xib in Resources */,
 				F7A42DDA2662A3F900536AB8 /* GoogleService-Info.plist in Resources */,
 				F7A42D5326629CED00536AB8 /* Assets.xcassets in Resources */,
 				F7A42F262662AF1A00536AB8 /* LoadingView.xib in Resources */,
 				F7A42D5126629CED00536AB8 /* Main.storyboard in Resources */,
+				F76617382662D165009DDBD2 /* not_found.json in Resources */,
 				F7A42F222662AE8F00536AB8 /* loading.json in Resources */,
 				F7A42FBB2662C43A00536AB8 /* MovieCollectionViewCell.xib in Resources */,
 			);
@@ -359,6 +370,7 @@
 				F7A42FAF2662BE5700536AB8 /* String+Extension.swift in Sources */,
 				F7A42FA62662BA9900536AB8 /* HomeViewModel.swift in Sources */,
 				F7A42F2D2662B47D00536AB8 /* APIService.swift in Sources */,
+				F766172E2662CEC1009DDBD2 /* NotFoundView.swift in Sources */,
 				F766172B2662CB95009DDBD2 /* UIView+Extension.swift in Sources */,
 				F7A42EF92662AD1F00536AB8 /* HomeVC.swift in Sources */,
 				F7A42D4E26629CED00536AB8 /* SplashVC.swift in Sources */,

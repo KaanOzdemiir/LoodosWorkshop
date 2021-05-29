@@ -45,4 +45,17 @@ extension UIViewController{
         
         view.sendSubviewToBack(loadingView!)
     }
+    
+    func getNotFoundView() -> NotFoundView {
+        var notFoundView: NotFoundView!
+        
+        if let _notFoundView = self.view.subviews.first(where: {$0.tag == 998}) as? NotFoundView{
+            notFoundView = _notFoundView
+        }else{
+            notFoundView = NotFoundView(frame: view.frame)
+            view.addSubview(notFoundView)
+        }
+        
+        return notFoundView
+    }
 }

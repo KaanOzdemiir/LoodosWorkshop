@@ -18,8 +18,10 @@ class HomeViewModel {
     var searchText: String = ""{
         didSet{
             fetchMovies()
+            isSeaching = !searchText.isEmpty
         }
     }
+    var isSeaching: Bool = false
     
     var params: [String: Any] = [:]
     
@@ -28,10 +30,10 @@ class HomeViewModel {
     
     func fetchMovies() {
           movieRepository
-            .getMovies(searchText: searchText, params: params).subscribe(onNext: { [weak self] (response) in
+            .getMovies(searchText: searchText, params: params).subscribe(onNext: { [weak self] (result) in
                 guard let self = self else { return }
-                self.movies = [response]
-                self.rxMovieResponse.onNext(response)
+                self.movies = result.response.boolValue ? [result] : []
+                self.rxMovieResponse.onNext(result)
             }, onError: { [weak self] (error) in
                 self?.rxMovieResponse.onError(error)
             })
