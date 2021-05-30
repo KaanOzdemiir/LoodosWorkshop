@@ -93,6 +93,9 @@
                             <constraint firstItem="Egy-fR-O23" firstAttribute="leading" secondItem="N7H-Bh-q9G" secondAttribute="leading" id="nkD-R2-BOP"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="collectionView" destination="ikt-f0-IvK" id="9Is-7T-0Ww"/>
                         <outlet property="searchBar" destination="B2F-Wl-JYU" id="pZ3-W8-whs"/>
@@ -121,6 +124,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="328" id="8wW-Sm-03x"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zzA-yS-Ar8">
                                                 <rect key="frame" x="16" y="246" width="128" height="164"/>
@@ -133,6 +140,8 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action, Adventure, Fantasy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je9-9k-MYW">
@@ -228,6 +237,10 @@
                                             <constraint firstItem="AB3-Ei-pUU" firstAttribute="centerX" secondItem="Cig-Mt-USz" secondAttribute="centerX" id="vVP-yH-6i1"/>
                                             <constraint firstItem="je9-9k-MYW" firstAttribute="leading" secondItem="kAU-GU-7ym" secondAttribute="leading" id="xWD-pL-7hv"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Actors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyc-6z-9n6">
                                         <rect key="frame" x="16" y="479.5" width="382" height="20.5"/>
@@ -265,6 +278,10 @@
                                     <constraint firstItem="LZu-2q-np8" firstAttribute="centerX" secondItem="uyc-6z-9n6" secondAttribute="centerX" id="twg-ag-E32"/>
                                     <constraint firstItem="LZu-2q-np8" firstAttribute="top" secondItem="WQe-jG-k6u" secondAttribute="top" id="xvo-d3-gpd"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tBS-NB-nbB"/>
@@ -279,6 +296,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3oh-Ur-u9d"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="actorsLabel" destination="fSg-xI-zWb" id="xBL-W1-DZg"/>
                         <outlet property="movieNameLabel" destination="Cz0-t4-XQZ" id="7tc-jx-f7Z"/>
@@ -304,6 +324,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1qi-c8-QpJ"/>
                     </connections>

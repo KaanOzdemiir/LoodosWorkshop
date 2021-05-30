@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Hero
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
@@ -32,6 +33,8 @@ class MovieCollectionViewCell: UICollectionViewCell {
     }
 
     func setWith(_ movie: MovieResponse) {
+        
+        posterImageView.hero.id = movie.imdbID
         
         if let imageURL = URL(string: movie.poster ?? ""){
             posterImageView.kf.setImage(with: ImageResource(downloadURL: imageURL))

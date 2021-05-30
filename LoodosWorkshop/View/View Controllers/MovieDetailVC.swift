@@ -12,7 +12,11 @@ import Kingfisher
 class MovieDetailVC: BaseVC {
     
     @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var poster2ImageView: UIImageView!
+    @IBOutlet weak var poster2ImageView: UIImageView!{
+        didSet{
+            poster2ImageView.hero.id = viewModel.movie?.imdbID
+        }
+    }
     @IBOutlet weak var movieTypeLabel: UILabel!
     @IBOutlet weak var rateIntLabel: UILabel!
     @IBOutlet weak var rateDecimalLabel: UILabel!
@@ -24,6 +28,10 @@ class MovieDetailVC: BaseVC {
     
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
     }
     
     var viewModel = MovieDetailViewModel()

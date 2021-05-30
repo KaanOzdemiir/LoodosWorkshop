@@ -16,6 +16,10 @@ class SplashVC: BaseVC {
     
     var shimmer: FBShimmeringView!
 
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
