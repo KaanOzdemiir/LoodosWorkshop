@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class MovieDetailVC: UIViewController {
+class MovieDetailVC: BaseVC {
     
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var poster2ImageView: UIImageView!
@@ -53,5 +53,14 @@ class MovieDetailVC: UIViewController {
         movieNameLabel.text = viewModel.movie?.title
         plotLabel.text = viewModel.movie?.plot
         actorsLabel.text = viewModel.movie?.actors
+        
+        AnalyticsFunction.shared.sendMovieDetailAnalytics(
+            data: AnalyticsFunction.MovieDetailAnalyticsData(
+                title: viewModel.movie?.title,
+                type: viewModel.movie?.type,
+                year: viewModel.movie?.year,
+                genre: viewModel.movie?.genre
+            )
+        )
     }
 }

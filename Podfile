@@ -19,6 +19,7 @@ pod 'Hero'
 pod 'Shimmer'
 pod 'Firebase/RemoteConfig'
 pod 'lottie-ios'
+pod 'ReachabilitySwift'
 end
 
 deployment_target = '11.0'

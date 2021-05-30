@@ -10,7 +10,7 @@ import RxBus
 import RxSwift
 import Shimmer
 
-class SplashVC: UIViewController {
+class SplashVC: BaseVC {
 
     @IBOutlet weak var loodosLabel: UILabel!
     

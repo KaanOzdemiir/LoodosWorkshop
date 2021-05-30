@@ -66,4 +66,34 @@ extension UIViewController{
         
         return notFoundView
     }
+    
+    func presentNoConnectionView() {
+        var noConnectionView: NoConnectionView!
+        
+        if let _noConnectionView = self.view.subviews.first(where: {$0.tag == 997}) as? NoConnectionView{
+            noConnectionView = _noConnectionView
+        }else{
+            noConnectionView = NoConnectionView(frame: view.frame)
+            view.addSubview(noConnectionView)
+        }
+        
+        noConnectionView?.startAnimation()
+        noConnectionView.isHidden = false
+        view.bringSubviewToFront(noConnectionView!)
+    }
+    
+    func hideNoConnectionView() {
+        var noConnectionView: NoConnectionView!
+        
+        if let _noConnectionView = self.view.subviews.first(where: {$0.tag == 997}) as? NoConnectionView{
+            noConnectionView = _noConnectionView
+        }else{
+            noConnectionView = NoConnectionView(frame: view.frame)
+            view.addSubview(noConnectionView)
+        }
+        noConnectionView?.isHidden = true
+        noConnectionView?.stopAnimation()
+        
+        view.sendSubviewToBack(noConnectionView!)
+    }
 }

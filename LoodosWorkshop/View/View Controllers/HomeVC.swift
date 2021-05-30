@@ -11,7 +11,7 @@ import Lottie
 import RxCocoa
 import RxSwift
 
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
     
     var viewModel = HomeViewModel()
     
